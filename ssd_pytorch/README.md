@@ -94,7 +94,7 @@ python eval.py
 You can specify the parameters listed in the `eval.py` file by flagging them or manually changing them.  
 
 
-<img align="left" src= "https://github.com/amdegroot/ssd.pytorch/blob/master/doc/detection_examples.png">
+<img align="left" src= "https://github.com/liaoguiqiu/SSD_pytorch_for_Xray/blob/master/ssd_pytorch/demo/knife.jpg">
 
 To evaluate jpg pctures in a specific file(picture by picture):
 
