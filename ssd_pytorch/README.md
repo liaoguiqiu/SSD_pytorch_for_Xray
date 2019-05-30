@@ -96,6 +96,13 @@ You can specify the parameters listed in the `eval.py` file by flagging them or 
 
 <img align="left" src= "https://github.com/amdegroot/ssd.pytorch/blob/master/doc/detection_examples.png">
 
+To evaluate jpg pctures in a specific file(picture by picture):
+
+```Shell
+python demo\ test_one_picture.py
+```
+
+
 ## Performance
 
 #### VOC2007 Test
