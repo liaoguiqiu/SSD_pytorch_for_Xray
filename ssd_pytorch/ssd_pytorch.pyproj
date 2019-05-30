@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9cbeaf5a-3371-462f-8fed-0ad6c3906e2a}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>demo\test_one_pic.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="data\coco.py" />
+    <Compile Include="data\config.py" />
+    <Compile Include="data\voc0712.py" />
+    <Compile Include="data\__init__.py" />
+    <Compile Include="demo\live.py" />
+    <Compile Include="demo\test_one_pic.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="demo\__init__.py" />
+    <Compile Include="eval.py" />
+    <Compile Include="layers\box_utils.py" />
+    <Compile Include="layers\functions\detection.py" />
+    <Compile Include="layers\functions\prior_box.py" />
+    <Compile Include="layers\functions\__init__.py" />
+    <Compile Include="layers\modules\l2norm.py" />
+    <Compile Include="layers\modules\multibox_loss.py" />
+    <Compile Include="layers\modules\__init__.py" />
+    <Compile Include="layers\__init__.py" />
+    <Compile Include="ssd.py" />
+    <Compile Include="test.py" />
+    <Compile Include="train.py" />
+    <Compile Include="utils\augmentations.py" />
+    <Compile Include="utils\__init__.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="data\coco_labels.txt" />
+    <Content Include="data\example.jpg" />
+    <Content Include="doc\detection_example.png" />
+    <Content Include="doc\detection_example2.png" />
+    <Content Include="doc\detection_examples.png" />
+    <Content Include="doc\SSD.jpg" />
+    <Content Include="doc\ssd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="data" />
+    <Folder Include="demo" />
+    <Folder Include="doc" />
+    <Folder Include="layers" />
+    <Folder Include="layers\functions" />
+    <Folder Include="layers\modules" />
+    <Folder Include="utils" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>
