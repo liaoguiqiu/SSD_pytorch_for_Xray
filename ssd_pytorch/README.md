@@ -95,7 +95,7 @@ You can specify the parameters listed in the `eval.py` file by flagging them or 
 
 
 <img align="left" src= "https://github.com/liaoguiqiu/SSD_pytorch_for_Xray/blob/master/ssd_pytorch/demo/knife.jpg">
-
+</p>
 To evaluate jpg pctures in a specific file(picture by picture):
 
 ```Shell
